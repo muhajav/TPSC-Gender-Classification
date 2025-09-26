@@ -1,0 +1,13 @@
+# Ignore the virtual environment
+venv/
+
+# Ignore large data and model files
+data/
+models/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# Ignore macOS specific files
+.DS_Store
