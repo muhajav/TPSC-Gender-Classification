@@ -27,7 +27,7 @@ Follow these steps to get a working copy of the project on your local machine.
 ### 1. Clone the Repository
 First, clone the project code from GitHub. Open your terminal and run:
 ```bash
-git clone <OTW YA JANCOKKK>
+git clone <https://github.com/muhajav/TPSC-Gender-Classification>
 ```
 
 ### 2. Download the Data and Model
