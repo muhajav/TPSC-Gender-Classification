@@ -27,7 +27,7 @@ Follow these steps to get a working copy of the project on your local machine.
 ### 1. Clone the Repository
 First, clone the project code from GitHub. Open your terminal and run:
 ```bash
-git clone <PASTE_YOUR_REPOSITORY_URL_HERE>
+git clone <OTW YA JANCOKKK>
 ```
 
 ### 2. Download the Data and Model
