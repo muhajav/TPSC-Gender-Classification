@@ -6,17 +6,18 @@ A project to classify gender from face images and explain the model's decisions 
 
 ## 📋 Project Overview
 
-* **Dataset**: CelebA (Align&Cropped version)
-* **Model**: A ResNet18 model, fine-tuned for binary gender classification.
-* **Explainability Methods**: LIME vs. Saliency Maps
+- **Dataset**: CelebA (Align&Cropped version)
+- **Model**: A ResNet18 model, fine-tuned for binary gender classification.
+- **Explainability Methods**: LIME vs. Saliency Maps
 
 ---
 
 ## ⚙️ Prerequisites
 
 Before you begin, ensure you have the following installed on your machine:
-* Python 3.8 or higher
-* Git
+
+- Python 3.8 or higher
+- Git
 
 ---
 
@@ -25,18 +26,22 @@ Before you begin, ensure you have the following installed on your machine:
 Follow these steps to get a working copy of the project on your local machine.
 
 ### 1. Clone the Repository
+
 First, clone the project code from GitHub. Open your terminal and run:
+
 ```bash
 git clone <https://github.com/muhajav/TPSC-Gender-Classification>
 ```
 
 ### 2. Download the Data and Model
+
 The dataset and the pre-trained model are too large for GitHub and are stored in a shared Google Drive folder.
 
-* **[Click here to download the `data` and `models` folders](<PASTE_THE_SHARED_GOOGLE_DRIVE_LINK_HERE>)**
-* Place both the `data` and `models` folders directly inside the project directory you just cloned.
+- **[Click here to download the `data` and `models` folders](https://drive.google.com/drive/folders/1u_7_UV1suI2wwp864qCMfSdzwz--UDSb?usp=sharing)**
+- Place both the `data` and `models` folders directly inside the project directory you just cloned.
 
 ### 3. Set Up the Python Environment
+
 We use a virtual environment to keep project dependencies separate.
 
 ```bash
@@ -49,10 +54,13 @@ python3 -m venv venv
 # Activate the environment
 source venv/bin/activate
 ```
+
 Your terminal prompt should now start with `(venv)`.
 
 ### 4. Install Dependencies
+
 Install all the required Python libraries by running:
+
 ```bash
 pip3 install torch torchvision tqdm
 ```
@@ -64,13 +72,17 @@ pip3 install torch torchvision tqdm
 Your environment is now set up.
 
 ### Training the Model
+
 The model has already been trained by Javier, and the result is saved in the `models/` folder. You do not need to run the training script again. However, if you want to retrain it for any reason, you can run:
+
 ```bash
 python3 run_training.py
 ```
 
 ### Applying Explainability Methods (Your Main Task)
+
 Your main task is to load the pre-trained model and apply the LIME and Saliency methods. You should create a new script (e.g., `explain.py`) to:
+
 1.  Load the trained model from `./models/gender_classifier_model.pth`.
 2.  Load sample images from the `./data/celeba/` folder.
 3.  Apply the explanation methods to the model's predictions on those images.
